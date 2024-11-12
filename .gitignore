@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 h1/build/
 h1/*.user
 h2/build/
+=======
+*/build/
+*/*.user
+>>>>>>> cd2efa66070c1b82108c9709bff51167307267b0
