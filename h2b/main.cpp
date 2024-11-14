@@ -17,7 +17,7 @@ int main()
     carList.push_back(objectCar1);
     carList.push_back(objectCar2);
 
-    //all hail gippity
+    //gippity has taken the wheel, for I do not know what I do.
     for (Car& car : carList) {
         car.printData();
     }
