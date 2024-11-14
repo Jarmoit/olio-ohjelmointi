@@ -11,5 +11,6 @@ SOURCES += \
 
 HEADERS += \
     car.h \
+    poistamut.h \
     rectangle.h \
     student.h

@@ -1,12 +1,9 @@
 #ifndef CAR_H
 #define CAR_H
-
-#include <iostream>
 #include <string>
-
 using namespace std;
 
-class car
+class Car
 {
 private:
     string brand;
@@ -14,17 +11,16 @@ private:
     int yearModel;
 
 
+
 public:
-    car();
+    Car();
     string getBrand() const;
     void setBrand(const string &newBrand);
     string getModel() const;
     void setModel(const string &newModel);
     int getYearModel() const;
     void setYearModel(int newYearModel);
-
-
-
+    Car(string a, string b, int c);
     void printData();
 };
 

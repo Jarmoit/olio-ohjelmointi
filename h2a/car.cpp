@@ -36,4 +36,14 @@ void car::printData(){
     cout<<"Auton vuosi: "<<yearModel<<endl;
 }
 
+string car::getPoistamut() const
+{
+    return poistamut;
+}
+
+void car::setPoistamut(const string &newPoistamut)
+{
+    poistamut = newPoistamut;
+}
+
 car::car() {}
