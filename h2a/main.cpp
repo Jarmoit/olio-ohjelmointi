@@ -17,8 +17,6 @@ int main()
     Rectangle *objectRectangle = new Rectangle;
     objectRectangle->setHeight(7);
     objectRectangle->setWidth(11);
-
-    //cout<<objectRectangle->getHeight()<<endl;
     cout<<"Pinta-ala: "<<objectRectangle->getArea()<<endl;
     cout<<"keha: "<<objectRectangle->getCircum()<<endl;
 

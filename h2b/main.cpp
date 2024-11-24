@@ -18,18 +18,14 @@ int main()
     carList.push_back(objectCar2);
 
     //printataan ekan auto tiedot    car.printData();
-    for (int i=0;i<carList.size();i++){
+    for (int i=0;i<carList.size();i++)
+    {
         carList[i].printData();
+   }
 
-    }
-
-
-
-
-    //----------Ignore------------
-    //for (Car& car : carList) {
-    //    car.printData();
-
-    //}
     return 0;
 }
+//----------Ignore------------
+//for (Car& car : carList) {
+//    car.printData();
+//}
