@@ -1,24 +1,19 @@
 #include "italianchef.h"
 #include <iostream>
+#include "chef.h"
 
-ItalianChef::ItalianChef(string chefName) : Chef(chefName) //opettele tekniikka
+
+ItalianChef::ItalianChef(string chefname) : Chef(chefname)
 {
-    this->name=chefName;
+    this->name = chefname;
 }
 
 string ItalianChef::getName()
 {
-
     return name;
 }
 
 void ItalianChef::makePasta()
 {
-    cout<<"Italian Chef "<<name<<" makes pasta"<<endl;
+    std::cout<<this->getName()+" makes pasta\n";
 }
-
-//ItalianChef::~ItalianChef()
-//{
-//     cout<<"Italian Chef "<<name<<" destruktori"<<endl;
-//}
-

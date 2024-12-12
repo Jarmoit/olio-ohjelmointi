@@ -1,21 +1,17 @@
-#include <iostream>
 #include "chef.h"
 #include "italianchef.h"
+#include <iostream>
 
 using namespace std;
 
 int main()
 {
-    //main-class
-    Chef objChef("Gordon Ramsay"); //opettele tekniikka
-    ItalianChef objItaly("Anthony Bourdain");
-    objChef.makeSalad();
-    objChef.makeSoup();
-
-    //italianchef subclass
-    objItaly.makePasta();
-    cout<<"name of the Italian Chef is "<<objItaly.getName()<<endl;
+    Chef kokki1("Gordon Ramsy");
+    kokki1.getName();
+    kokki1.makeSalad();
+    kokki1.makeSoup();
+    ItalianChef kokki2("Anthony bordane");
+    kokki2.makePasta();
 
     return 0;
 }
-

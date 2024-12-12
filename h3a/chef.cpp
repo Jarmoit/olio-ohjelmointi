@@ -1,27 +1,6 @@
 #include "chef.h"
 #include <iostream>
-using namespace std;
-
-Chef::Chef(string chefName)
-{
-    name=chefName;
-    if (name=="Gordon Ramsay"){
-        cout<<"Chef "<<name<<" konstruktori"<<endl;
-    }
-    else{
-        cout<<"ItalianChef "<<name<<" konstruktori"<<endl;
-    }
-}
-
-void Chef::makeSalad()
-{
-    cout<<"Chef "<<name<<" makes salad"<<endl;
-}
-
-void Chef::makeSoup()
-{
-    cout<<"Chef "<<name<<" makes soup"<<endl;
-}
+#include <string>
 
 string Chef::getName() const
 {
@@ -35,10 +14,21 @@ void Chef::setName(const string &newName)
 
 Chef::~Chef()
 {
-    if (name=="Gordon Ramsay"){
-        cout<<"Chef "<<name<<" destruktori"<<endl;
-    }
-    else{
-        cout<<"ItalianChef "<<name<<" destruktori"<<endl;
-    }
+    std::cout<<"* "+this->getName()+" chef tuhottu\n";
+}
+
+Chef::Chef(string chefname)
+{
+    name=chefname;
+    std::cout<<"* "+this->getName()+" chef tehty\n";
+}
+
+void Chef::makeSalad()
+{
+    std::cout<<this->getName()+" makes salad\n";
+}
+
+void Chef::makeSoup()
+{
+    std::cout<<this->getName()+" makes soup\n";
 }
